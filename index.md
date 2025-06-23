@@ -4,7 +4,10 @@ layout: homepage
 
 ## About Me
 
-I am a Ph.D. student at ...
+I am a graduate student in Mechanical Engineering at the University of California, Berkeley.  
+My research lies at the intersection of **Large Language Models (LLMs)** and **robotics**, with a focus on embodied planning, cognitive reasoning, and optimization-based control.  
+I have conducted research at UC Berkeley, Peking University, and the University of Illinois Urbana-Champaign.
+
 
 ## Research Interests
 
