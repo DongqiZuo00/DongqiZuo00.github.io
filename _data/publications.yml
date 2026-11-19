@@ -54,7 +54,6 @@ manuscripts:
     short: Geometric Representation Training
     title: "Geometric Representation Training: Verifier-Labeled Subspace Contrastive Learning"
     authors: [Dongqi Zuo, Haocheng Yang, Haoxuan Li, Defu Cao, Mengyue Yang, Yan Liu]
-    venue: Rejected submission
+    venue: JMLR — Under review
     summary: "A model can become more accurate on its first attempt while losing the ability to find different correct solutions. GRT uses verifier labels to separate correct and incorrect answers in a fixed subspace of the model’s hidden states while preserving variation among correct reasoning paths."
-    note: "Author’s note: My understanding is that the submission was rejected due to circumstances involving a co-author."
     pdf: /assets/papers/geometric-representation-training.pdf
