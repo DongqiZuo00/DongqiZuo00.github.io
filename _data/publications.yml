@@ -1,22 +1,60 @@
-main:
+published:
+  - id: perception-chains
+    short: Perception Chains
+    title: "Perception Chains: Stabilizing Multimodal Reasoning with Explicit Visual Intermediates"
+    authors: [Dongqi Zuo, Weixing Guo, Xinyu Wang]
+    venue: ACM Multimedia 2026 · Oral
+    award: Best Paper Award in Multimedia Reasoning
+    award_url: https://2026.acmmm.org/site/awards.html
+    summary: "At each reasoning step, a vision-language model identifies an image region, reads an attribute, and records how it supports the answer. This makes it possible to trace a mistake back to the visual evidence and repair that step."
+    pdf: /assets/papers/perception-chains.pdf
+    links:
+      - label: Project page
+        url: https://dongqizuo00.github.io/Perception-Chains/
+      - label: DOI
+        url: https://doi.org/10.1145/3767308.3836512
+  - id: contractive-restoring-flows
+    short: Contractive Restoring Flows
+    title: "Contractive Restoring Flows: Robust Reasoning Distillation via Orbital Stability"
+    authors: [Dongqi Zuo, Yuanyuan Wang, Chuan Zhou, Mingming Gong, Haoxuan Li]
+    venue: NeurIPS 2026
+    summary: "How can a smaller model recover when its reasoning drifts away from its teacher’s? We train it to damp deviations perpendicular to the teacher’s trajectory while preserving progress along that trajectory."
+    pdf: /assets/papers/contractive-restoring-flows.pdf
+    links:
+      - label: Code
+        url: https://github.com/DongqiZuo00/Contractive-Restoring-Flows
+  - id: radi
+    short: RADI
+    title: "RADI: LLMs as World Models for Robotic Action Decomposition and Imagination"
+    authors: [Dongqi Zuo, Zheng Chen, Chuan Zhou, Yandong Guo, Xiao He, Mingming Gong]
+    venue: ICLR 2025 Workshop on World Models
+    summary: "RADI breaks a robot’s goal into smaller actions, imagines how each action would change the environment, and revises the plan when a step cannot be executed. We evaluated the approach on household tasks in VirtualHome."
+    record: https://researchportal.hkust.edu.hk/en/publications/radi-llms-as-world-models-for-robotic-action-decomposition-and-im/
+    links:
+      - label: Workshop
+        url: https://sites.google.com/view/worldmodel-iclr2025/accepted-papers
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
-
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+manuscripts:
+  - id: provable-rag
+    short: ProvableRAG
+    title: "Logically Provable Reasoning for Multi-Hop Retrieval Augmented Generation"
+    venue: Under review
+    summary: "ProvableRAG checks whether a proposed set of facts would suffice to answer a question before searching for them. It then retrieves the evidence and checks whether the facts it actually found support the answer."
+    pdf: /assets/papers/provable-rag.pdf
+    links:
+      - label: Code
+        url: https://github.com/DongqiZuo00/ProvableRAG
+  - id: reprsi
+    short: RepRSI
+    title: "RepRSI: Can Internal Learning Progress Guide Recursive Self-Improvement?"
+    venue: Under review
+    summary: "RepRSI measures whether a model represents equivalent intermediate computations consistently across different contexts. It uses changes in that measure to select training examples and checkpoints for the next round of learning."
+    pdf: /assets/papers/reprsi.pdf
+  - id: grt
+    short: Geometric Representation Training
+    title: "Geometric Representation Training: Verifier-Labeled Subspace Contrastive Learning"
+    authors: [Dongqi Zuo, Haocheng Yang, Haoxuan Li, Defu Cao, Mengyue Yang, Yan Liu]
+    venue: Rejected submission
+    summary: "A model can become more accurate on its first attempt while losing the ability to find different correct solutions. GRT uses verifier labels to separate correct and incorrect answers in a fixed subspace of the model’s hidden states while preserving variation among correct reasoning paths."
+    note: "Author’s note: My understanding is that the submission was rejected due to circumstances involving a co-author."
+    pdf: /assets/papers/geometric-representation-training.pdf

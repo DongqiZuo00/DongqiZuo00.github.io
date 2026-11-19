@@ -1,0 +1,24 @@
+<div class="paper-list">
+  {% for paper in include.papers %}
+  <article class="paper" id="{{ paper.id }}">
+    <div class="paper-meta">
+      <span class="venue">{{ paper.venue | escape }}</span>
+      {% if paper.award %}<a class="award" href="{{ paper.award_url }}">{{ paper.award | escape }}</a>{% endif %}
+    </div>
+    <div class="paper-body">
+      {% if paper.pdf %}{% assign paper_url = paper.pdf | relative_url %}{% else %}{% assign paper_url = paper.record %}{% endif %}
+      <h3><a href="{{ paper_url | escape }}">{{ paper.title | escape }}</a></h3>
+      {% if paper.authors %}
+      <p class="authors">{% for author in paper.authors %}{% if author == site.title %}<strong>{{ author }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+      {% endif %}
+      <p class="summary">{{ paper.summary | escape }}</p>
+      {% if paper.note %}<p class="note">{{ paper.note | escape }}</p>{% endif %}
+      <div class="paper-links">
+        {% if paper.pdf %}<a href="{{ paper.pdf | relative_url }}" download aria-label="Download {{ paper.short | escape }} PDF">Download PDF</a>{% endif %}
+        {% if paper.record %}<a href="{{ paper.record | escape }}">Paper record</a>{% endif %}
+        {% for link in paper.links %}<a href="{{ link.url | escape }}">{{ link.label | escape }}</a>{% endfor %}
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>

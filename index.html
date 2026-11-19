@@ -1,0 +1,64 @@
+---
+layout: homepage
+---
+<section class="hero wrap" id="about" aria-labelledby="name">
+  <div class="intro">
+    <p class="role">Research Assistant &middot; Peking University</p>
+    <h1 id="name">Dongqi Zuo</h1>
+    <p class="bio">I study how language models learn to reason. My work examines what happens inside a model when it follows a line of reasoning, grounds a claim in an image, or decides which evidence to retrieve.</p>
+    <p class="bio">I work with <a href="https://haoxuanli-pku.github.io/">Haoxuan Li</a> at Peking University’s Institute for Artificial Intelligence. I previously worked with Fei-Fei Li’s group at Stanford HAI and studied robotics at the University of California, Berkeley.</p>
+    <div class="contact-links">
+      <a href="mailto:{{ site.email }}">Email me</a>
+      <a href="{{ site.github_link }}">GitHub</a>
+      <a href="{{ '/assets/files/curriculum_vitae.pdf' | relative_url }}" download="Dongqi-Zuo-CV.pdf">Download CV</a>
+    </div>
+  </div>
+  <img class="portrait" src="{{ '/assets/img/dongqi-zuo.jpg' | relative_url }}" alt="Portrait of Dongqi Zuo" width="1000" height="1000">
+</section>
+
+<section class="section wrap" id="publications" aria-labelledby="publications-title">
+  <div class="section-title"><h2 id="publications-title">Selected publications</h2></div>
+  {% include papers.html papers=site.data.publications.published %}
+</section>
+
+<section class="section wrap" id="manuscripts" aria-labelledby="manuscripts-title">
+  <div class="section-title"><h2 id="manuscripts-title">Research manuscripts</h2></div>
+  {% include papers.html papers=site.data.publications.manuscripts %}
+</section>
+
+<section class="section wrap" id="background" aria-labelledby="background-title">
+  <div class="section-title"><h2 id="background-title">Background</h2></div>
+  <div class="background-grid">
+    <div>
+      <h3>Research experience</h3>
+      <div class="entry">
+        <p class="dates">October 2024 – present</p>
+        <h4>Peking University</h4>
+        <p class="detail">Visiting student and research assistant in Haoxuan Li’s group, Institute for Artificial Intelligence. My projects include reasoning distillation and proof-guided retrieval.</p>
+      </div>
+      <div class="entry">
+        <p class="dates">September 2025 – August 2026</p>
+        <h4>Stanford University</h4>
+        <p class="detail">Research assistant in Fei-Fei Li’s group at the Stanford Institute for Human-Centered Artificial Intelligence.</p>
+      </div>
+      <div class="entry">
+        <p class="dates">Summer 2023</p>
+        <h4>University of Illinois Urbana-Champaign</h4>
+        <p class="detail">Research intern in Naira Hovakimyan’s group. I worked on the hardware and navigation software for an autonomous mobile robot.</p>
+      </div>
+    </div>
+    <div>
+      <h3>Education</h3>
+      <div class="entry">
+        <p class="dates">2024 – 2025</p>
+        <h4>University of California, Berkeley</h4>
+        <p class="detail">Master’s in mechanical engineering, specializing in robotics and control. I worked on multi-robot coordination and energy-aware flight planning.</p>
+      </div>
+      <div class="entry">
+        <p class="dates">2019 – 2024</p>
+        <h4>Chongqing University &amp; University of Cincinnati</h4>
+        <p class="detail">Joint undergraduate program in mechanical engineering. B.Eng. from Chongqing University and B.S. from the University of Cincinnati.</p>
+      </div>
+    </div>
+  </div>
+</section>
