@@ -1,5 +1,8 @@
 published:
   - id: perception-chains
+    image: /assets/img/perception-chains-teaser.png
+    image_alt: "Four image panels show how a model can assign correct counts to the wrong answer."
+    badge: ACM MM
     short: Perception Chains
     title: "Perception Chains: Stabilizing Multimodal Reasoning with Explicit Visual Intermediates"
     authors: [Dongqi Zuo, Weixing Guo, Xinyu Wang]
@@ -14,6 +17,9 @@ published:
       - label: DOI
         url: https://doi.org/10.1145/3767308.3836512
   - id: contractive-restoring-flows
+    image: /assets/img/contractive-restoring-flows-teaser.png
+    image_alt: "Teacher and student reasoning trajectories before and after applying the contractive restoring flow."
+    badge: NeurIPS
     short: Contractive Restoring Flows
     title: "Contractive Restoring Flows: Robust Reasoning Distillation via Orbital Stability"
     authors: [Dongqi Zuo, Yuanyuan Wang, Chuan Zhou, Mingming Gong, Haoxuan Li]
@@ -24,6 +30,9 @@ published:
       - label: Code
         url: https://github.com/DongqiZuo00/Contractive-Restoring-Flows
   - id: radi
+    image: /assets/img/radi-teaser.png
+    image_alt: "RADI simulates a VirtualHome action sequence and revises where the robot places a pancake."
+    badge: ICLR Workshop
     short: RADI
     title: "RADI: LLMs as World Models for Robotic Action Decomposition and Imagination"
     authors: [Dongqi Zuo, Zheng Chen, Chuan Zhou, Yandong Guo, Xiao He, Mingming Gong]
@@ -36,6 +45,8 @@ published:
 
 manuscripts:
   - id: provable-rag
+    image: /assets/img/provable-rag-teaser.png
+    image_alt: "Logical graph connecting retrieval and reasoning steps."
     short: ProvableRAG
     title: "Logically Provable Reasoning for Multi-Hop Retrieval Augmented Generation"
     venue: Under review
@@ -45,12 +56,16 @@ manuscripts:
       - label: Code
         url: https://github.com/DongqiZuo00/ProvableRAG
   - id: reprsi
+    image: /assets/img/reprsi-teaser.png
+    image_alt: "Heatmaps comparing exposure, semantic cohesion, and reuse under three training curricula."
     short: RepRSI
     title: "RepRSI: Can Internal Learning Progress Guide Recursive Self-Improvement?"
     venue: Under review
     summary: "RepRSI measures whether a model represents equivalent intermediate computations consistently across different contexts. It uses changes in that measure to select training examples and checkpoints for the next round of learning."
     pdf: /assets/papers/reprsi.pdf
   - id: grt
+    image: /assets/img/grt-teaser.png
+    image_alt: "Change in pass@k on MATH-500 as the number of sampled solutions increases."
     short: Geometric Representation Training
     title: "Geometric Representation Training: Verifier-Labeled Subspace Contrastive Learning"
     authors: [Dongqi Zuo, Haocheng Yang, Haoxuan Li, Defu Cao, Mengyue Yang, Yan Liu]
@@ -59,6 +74,8 @@ manuscripts:
     note: "The initial NeurIPS 2026 reviews gave the paper an average score of 4.67/6."
     pdf: /assets/papers/geometric-representation-training.pdf
   - id: vla
+    image: /assets/img/vla-teaser.png
+    image_alt: "A robot attempts to pour from a bowl after training with single-skill or multi-skill examples."
     short: VLA skill generalization
     title: "Whether and How Is VLA Fine-tuning Generalizable to Out-of-Distribution Skills?"
     venue: Preparing for resubmission to IEEE Robotics and Automation Letters (RA-L)

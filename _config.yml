@@ -1,9 +1,20 @@
 title: Dongqi Zuo
+position: Research Assistant
+affiliation: Peking University
+affiliation_link: https://english.pku.edu.cn/
 url: https://dongqizuo00.github.io
 lang: en
 description: "Dongqi Zuo is a research assistant at Peking University working on interpretability, AI agents, and embodied intelligence."
 email: dongqizuo@gmail.com
 github_link: https://github.com/DongqiZuo00
+cv_link: /assets/files/curriculum_vitae.pdf
+avatar: /assets/img/dongqi-zuo.jpg
+favicon: /assets/img/favicon.png
+favicon_dark: /assets/img/favicon-dark.png
+canonical: https://dongqizuo00.github.io/
+font: Serif
+auto_dark_mode: true
+enable_footnote: true
 exclude:
   - Gemfile
   - Gemfile.lock

@@ -4,4 +4,4 @@ My [academic homepage](https://dongqizuo00.github.io/) includes my research, pub
 
 The site is built with Jekyll and hosted on GitHub Pages. Edit `index.html` for the biography and background. Paper titles, links, and publication details are in `_data/publications.yml`, and the downloadable PDFs are in `assets/papers/`.
 
-The original site used [Minimal Light](https://github.com/yaoyao-liu/minimal-light).
+The site uses the [Minimal Light](https://github.com/yaoyao-liu/minimal-light) theme.

@@ -1,64 +1,32 @@
 ---
 layout: homepage
 ---
-<section class="hero wrap" id="about" aria-labelledby="name">
-  <div class="intro">
-    <p class="role">Research Assistant &middot; Peking University</p>
-    <h1 id="name">Dongqi Zuo</h1>
-    <p class="bio">My research focuses on interpretability, AI agents, and embodied intelligence. I study how models use visual evidence to reason, how agents decide what information to retrieve, and how robots apply familiar skills to new objects.</p>
-    <p class="bio">I work with <a href="https://haoxuanli-pku.github.io/">Haoxuan Li</a> at Peking University’s Institute for Artificial Intelligence. I previously worked with Fei-Fei Li’s group at Stanford HAI and studied robotics at the University of California, Berkeley.</p>
-    <div class="contact-links">
-      <a href="mailto:{{ site.email }}">Email me</a>
-      <a href="{{ site.github_link }}">GitHub</a>
-      <a href="{{ '/assets/files/curriculum_vitae.pdf' | relative_url }}" download="Dongqi-Zuo-CV.pdf">Download CV</a>
-    </div>
-  </div>
-  <img class="portrait" src="{{ '/assets/img/dongqi-zuo.jpg' | relative_url }}" alt="Portrait of Dongqi Zuo" width="1000" height="1000">
-</section>
+<h2 id="about">About Me</h2>
+<p>I am a research assistant at Peking University’s Institute for Artificial Intelligence, where I work with <a href="https://haoxuanli-pku.github.io/">Haoxuan Li</a>. I previously worked with Fei-Fei Li’s group at Stanford HAI and studied robotics at the University of California, Berkeley.</p>
 
-<section class="section wrap" id="publications" aria-labelledby="publications-title">
-  <div class="section-title"><h2 id="publications-title">Selected publications</h2></div>
-  {% include papers.html papers=site.data.publications.published %}
-</section>
+<h2 id="research-interests">Research Interests</h2>
+<ul>
+  <li><strong>Interpretability.</strong> I study how models use visual evidence and how their hidden representations change as they reason.</li>
+  <li><strong>AI agents.</strong> I study how agents plan, decide which evidence to retrieve, and check whether it supports an answer.</li>
+  <li><strong>Embodied intelligence.</strong> I study how robots turn goals into actions and apply familiar skills to new objects.</li>
+</ul>
 
-<section class="section wrap" id="manuscripts" aria-labelledby="manuscripts-title">
-  <div class="section-title"><h2 id="manuscripts-title">Research manuscripts</h2></div>
-  {% include papers.html papers=site.data.publications.manuscripts %}
-</section>
+<h2 id="publications">Selected Publications</h2>
+{% include papers.html papers=site.data.publications.published %}
 
-<section class="section wrap" id="background" aria-labelledby="background-title">
-  <div class="section-title"><h2 id="background-title">Background</h2></div>
-  <div class="background-grid">
-    <div>
-      <h3>Research experience</h3>
-      <div class="entry">
-        <p class="dates">October 2024 – present</p>
-        <h4>Peking University</h4>
-        <p class="detail">Visiting student and research assistant in Haoxuan Li’s group, Institute for Artificial Intelligence. My projects include reasoning distillation and proof-guided retrieval.</p>
-      </div>
-      <div class="entry">
-        <p class="dates">September 2025 – August 2026</p>
-        <h4>Stanford University</h4>
-        <p class="detail">Research assistant in Fei-Fei Li’s group at the Stanford Institute for Human-Centered Artificial Intelligence.</p>
-      </div>
-      <div class="entry">
-        <p class="dates">Summer 2023</p>
-        <h4>University of Illinois Urbana-Champaign</h4>
-        <p class="detail">Research intern in Naira Hovakimyan’s group. I worked on the hardware and navigation software for an autonomous mobile robot.</p>
-      </div>
-    </div>
-    <div>
-      <h3>Education</h3>
-      <div class="entry">
-        <p class="dates">2024 – 2025</p>
-        <h4>University of California, Berkeley</h4>
-        <p class="detail">Master’s in mechanical engineering, specializing in robotics and control. I worked on multi-robot coordination and energy-aware flight planning.</p>
-      </div>
-      <div class="entry">
-        <p class="dates">2019 – 2024</p>
-        <h4>Chongqing University &amp; University of Cincinnati</h4>
-        <p class="detail">Joint undergraduate program in mechanical engineering. B.Eng. from Chongqing University and B.S. from the University of Cincinnati.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<h2 id="manuscripts">Research Manuscripts</h2>
+{% include papers.html papers=site.data.publications.manuscripts %}
+
+<div id="background">
+  <h2 id="experience">Research Experience</h2>
+  <ul class="background-list">
+    <li><strong>Peking University</strong> · October 2024 – present<br>Visiting student and research assistant in Haoxuan Li’s group, Institute for Artificial Intelligence. My projects include reasoning distillation and proof-guided retrieval.</li>
+    <li><strong>Stanford University</strong> · September 2025 – August 2026<br>Research assistant in Fei-Fei Li’s group at the Stanford Institute for Human-Centered Artificial Intelligence.</li>
+    <li><strong>University of Illinois Urbana-Champaign</strong> · Summer 2023<br>Research intern in Naira Hovakimyan’s group. I worked on the hardware and navigation software for an autonomous mobile robot.</li>
+  </ul>
+  <h2 id="education">Education</h2>
+  <ul class="background-list">
+    <li><strong>University of California, Berkeley</strong> · 2024 – 2025<br>Master’s in mechanical engineering, specializing in robotics and control. I worked on multi-robot coordination and energy-aware flight planning.</li>
+    <li><strong>Chongqing University and University of Cincinnati</strong> · 2019 – 2024<br>Joint undergraduate program in mechanical engineering. B.Eng. from Chongqing University and B.S. from the University of Cincinnati.</li>
+  </ul>
+</div>
