@@ -56,4 +56,11 @@ manuscripts:
     authors: [Dongqi Zuo, Haocheng Yang, Haoxuan Li, Defu Cao, Mengyue Yang, Yan Liu]
     venue: JMLR — Under review
     summary: "A model can become more accurate on its first attempt while losing the ability to find different correct solutions. GRT uses verifier labels to separate correct and incorrect answers in a fixed subspace of the model’s hidden states while preserving variation among correct reasoning paths."
+    note: "The initial NeurIPS 2026 reviews gave the paper an average score of 4.67/6."
     pdf: /assets/papers/geometric-representation-training.pdf
+  - id: vla
+    short: VLA skill generalization
+    title: "Whether and How Is VLA Fine-tuning Generalizable to Out-of-Distribution Skills?"
+    venue: Preparing for resubmission to IEEE Robotics and Automation Letters (RA-L)
+    summary: "We tested three vision-language-action models on LIBERO to see whether a robot could apply a familiar skill to an object it had only learned to handle one way. Coverage-Informed VLA Training uses objects demonstrated with multiple skills to improve performance on unseen object–skill combinations."
+    pdf: /assets/papers/vla-skill-generalization.pdf
