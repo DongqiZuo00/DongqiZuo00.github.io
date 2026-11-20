@@ -7,19 +7,9 @@ layout: homepage
 </div>
 
 <div id="background">
-  <h2 id="education">Education</h2>
-  <ul class="background-list">
-    <li><strong>Master of Engineering in Mechanical Engineering</strong> · July 2024 – June 2025<br>Robotics and Automatic Control · GPA 3.62/4.00</li>
-    <li><strong>Joint Bachelor’s Program in Mechanical Engineering</strong> · September 2019 – May 2024<br>Bachelor of Science and Bachelor of Engineering · GPA 3.73/4.00 for both degrees</li>
-  </ul>
+  <h2 id="education">Academic Background</h2>
+  <p id="experience">After completing a joint undergraduate program in mechanical engineering at Chongqing University and the University of Cincinnati, I earned my M.Eng. at UC Berkeley, where I worked with Mark Mueller on energy-efficient drone flight. I later held overlapping research assistant positions at Stanford HAI and Peking University.</p>
 </div>
-
-<h2 id="experience">Research Experience</h2>
-<ul class="background-list">
-  <li><strong>Interpretability and reasoning.</strong> I developed Perception Chains to trace each step of a multimodal answer to the image region and attribute it uses. It reached 72.6% grounding accuracy on DIOR-RSVG, compared with 61.7% for Ferret. In CRF and GRT, I studied how models recover from reasoning errors and preserve multiple correct solutions.</li>
-  <li><strong>AI agents and self-improvement.</strong> I co-developed ProvableRAG to check which facts would answer a question and whether the retrieved evidence supports the answer. In RepRSI, I used a model’s internal representations to guide its next round of training. This reduced the error in predicting subsequent accuracy from 19.3 to 10.1 percentage points.</li>
-  <li><strong>Embodied intelligence and robot control.</strong> I tested how vision-language-action models transfer skills to new objects in LIBERO. In RepScribe, I used spatial reasoning errors to generate new training examples. In RADI, I used a language model to predict the effects of household actions and revise plans in VirtualHome. My flight-planning work used a recurrent network to predict energy consumption, reducing energy use by 34% relative to RAPPIDS.</li>
-</ul>
 
 <h2 id="publications">Selected Publications</h2>
 {% include papers.html papers=site.data.publications.published %}
