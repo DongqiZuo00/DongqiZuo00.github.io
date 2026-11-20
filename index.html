@@ -3,9 +3,15 @@ layout: homepage
 ---
 <div id="about">
   <h2 id="background">About Me</h2>
-  <p id="education">I studied mechanical engineering through a joint undergraduate program at Chongqing University and the University of Cincinnati. I earned my M.Eng. at UC Berkeley, where I worked with Mark Mueller. <span id="experience">I held concurrent research assistant positions at Stanford HAI and Peking University.</span></p>
-  <p id="research-interests">My research interests are interpretability, AI agents, and embodied intelligence.</p>
+  <p id="education">I studied mechanical engineering through a joint undergraduate program at Chongqing University and the University of Cincinnati. I earned my M.Eng. at UC Berkeley, where I worked with Mark Mueller.</p>
 </div>
+
+<h2 id="research-interests">Research Interests</h2>
+<ul class="background-list">
+  <li><strong>Interpretability.</strong> When a model answers a question about an image, I want to know which visual details support each step of its answer. I also study what happens inside a language model when it finds two different ways to solve the same problem.</li>
+  <li><strong>AI agents.</strong> I study how an agent decides what evidence it still needs and whether the facts it has gathered are enough to answer a question. I’m also interested in how an agent can use its own learning progress to choose what to practice next.</li>
+  <li><strong>Embodied intelligence.</strong> I study how robots use vision and language to plan actions and anticipate their effects. One question I explore is how a robot that learned to pour with one container can recognize what to change when it picks up a different one.</li>
+</ul>
 
 <h2 id="publications">Selected Publications</h2>
 {% include papers.html papers=site.data.publications.published %}
@@ -21,3 +27,15 @@ layout: homepage
   <li><strong>Silver Prize, Intelligent Manufacturing Challenge</strong> · June 2020<br>For an autonomous manufacturing system design.</li>
   <li><strong>Academic Scholarship</strong> · 2020–2024<br>Awarded five times.</li>
 </ul>
+
+<div id="experience">
+  <h2 id="work-experience">Work Experience</h2>
+  <ul class="background-list">
+    <li><strong>Stanford Institute for Human-Centered Artificial Intelligence (HAI)</strong> · Research Assistant<br>From September 2025 to August 2026, I worked in Fei-Fei Li’s group while also holding a research assistant position at Peking University.</li>
+    <li><strong>Peking University, Institute for Artificial Intelligence</strong> · Visiting Student and Research Assistant<br>I joined the group in 2024 and studied how to train language models to retain multiple valid solutions to a problem. I also helped build a retrieval system that uses a symbolic solver to check which facts would establish an answer before searching for them.</li>
+    <li><strong>UC Berkeley, Mechanical Engineering</strong> · Graduate Researcher<br>From September 2024 to June 2025, I modeled how much energy a drone would use on a planned flight. I used those predictions to compare flight plans and built a drone to test the model.</li>
+    <li><strong>University of Illinois Urbana-Champaign</strong> · Research Intern<br>In summer 2023, I helped build an autonomous mobile robot, from its mechanical structure to its embedded firmware. I implemented a local planner so the robot could revise its route as obstacles moved.</li>
+    <li><strong>Tianjin University, School of Computer Science</strong> · Research Assistant<br>From May 2021 to May 2022, I developed a global optimization algorithm that adapts when to explore new candidates and when to refine promising ones. I evaluated it on optimization benchmarks.</li>
+    <li><strong>Siemens Ltd., China</strong> · Technical Engineer Intern<br>From April to September 2020, I helped develop automated production lines in Beijing that used machine vision, robotic arms, and automated guided vehicles.</li>
+  </ul>
+</div>
