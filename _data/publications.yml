@@ -1,4 +1,17 @@
 published:
+  - id: contractive-restoring-flows
+    image: /assets/img/contractive-restoring-flows-teaser.png
+    image_alt: "Teacher and student reasoning trajectories before and after applying the contractive restoring flow."
+    badge: NeurIPS
+    short: Contractive Restoring Flows
+    title: "Contractive Restoring Flows: Robust Reasoning Distillation via Orbital Stability"
+    authors: [Dongqi Zuo, Yuanyuan Wang, Chuan Zhou, Mingming Gong, Haoxuan Li]
+    venue: NeurIPS 2026
+    summary: "How can a smaller model recover when its reasoning drifts away from its teacher’s? We train it to damp deviations perpendicular to the teacher’s trajectory while preserving progress along that trajectory."
+    pdf: /assets/papers/contractive-restoring-flows.pdf
+    links:
+      - label: Code
+        url: https://github.com/DongqiZuo00/Contractive-Restoring-Flows
   - id: perception-chains
     image: /assets/img/perception-chains-teaser.png
     image_alt: "Four image panels show how a model can assign correct counts to the wrong answer."
@@ -16,19 +29,6 @@ published:
         url: https://dongqizuo00.github.io/Perception-Chains/
       - label: DOI
         url: https://doi.org/10.1145/3767308.3836512
-  - id: contractive-restoring-flows
-    image: /assets/img/contractive-restoring-flows-teaser.png
-    image_alt: "Teacher and student reasoning trajectories before and after applying the contractive restoring flow."
-    badge: NeurIPS
-    short: Contractive Restoring Flows
-    title: "Contractive Restoring Flows: Robust Reasoning Distillation via Orbital Stability"
-    authors: [Dongqi Zuo, Yuanyuan Wang, Chuan Zhou, Mingming Gong, Haoxuan Li]
-    venue: NeurIPS 2026
-    summary: "How can a smaller model recover when its reasoning drifts away from its teacher’s? We train it to damp deviations perpendicular to the teacher’s trajectory while preserving progress along that trajectory."
-    pdf: /assets/papers/contractive-restoring-flows.pdf
-    links:
-      - label: Code
-        url: https://github.com/DongqiZuo00/Contractive-Restoring-Flows
   - id: radi
     image: /assets/img/radi-teaser.png
     image_alt: "RADI simulates a VirtualHome action sequence and revises where the robot places a pancake."
@@ -44,25 +44,6 @@ published:
         url: https://sites.google.com/view/worldmodel-iclr2025/accepted-papers
 
 manuscripts:
-  - id: provable-rag
-    image: /assets/img/provable-rag-teaser.png
-    image_alt: "Logical graph connecting retrieval and reasoning steps."
-    short: ProvableRAG
-    title: "Logically Provable Reasoning for Multi-Hop Retrieval Augmented Generation"
-    venue: Under review
-    summary: "ProvableRAG checks whether a proposed set of facts would suffice to answer a question before searching for them. It then retrieves the evidence and checks whether the facts it actually found support the answer."
-    pdf: /assets/papers/provable-rag.pdf
-    links:
-      - label: Code
-        url: https://github.com/DongqiZuo00/ProvableRAG
-  - id: reprsi
-    image: /assets/img/reprsi-teaser.png
-    image_alt: "Heatmaps comparing exposure, semantic cohesion, and reuse under three training curricula."
-    short: RepRSI
-    title: "RepRSI: Can Internal Learning Progress Guide Recursive Self-Improvement?"
-    venue: Under review
-    summary: "RepRSI measures whether a model represents equivalent intermediate computations consistently across different contexts. It uses changes in that measure to select training examples and checkpoints for the next round of learning."
-    pdf: /assets/papers/reprsi.pdf
   - id: grt
     image: /assets/img/grt-teaser.png
     image_alt: "Change in pass@k on MATH-500 as the number of sampled solutions increases."
@@ -78,6 +59,50 @@ manuscripts:
     image_alt: "A robot attempts to pour from a bowl after training with single-skill or multi-skill examples."
     short: VLA skill generalization
     title: "Whether and How Is VLA Fine-tuning Generalizable to Out-of-Distribution Skills?"
-    venue: Preparing for resubmission to IEEE Robotics and Automation Letters (RA-L)
+    authors: [Dongqi Zuo, Bowen Sun, Jinjia Guo, Xinyu Wang, Jing Du]
+    venue: Under review
     summary: "We tested three vision-language-action models on LIBERO to see whether a robot could apply a familiar skill to an object it had only learned to handle one way. Coverage-Informed VLA Training uses objects demonstrated with multiple skills to improve performance on unseen object–skill combinations."
     pdf: /assets/papers/vla-skill-generalization.pdf
+    pdf_label: Download VLA paper (PDF)
+  - id: reprsi
+    image: /assets/img/reprsi-teaser.png
+    image_alt: "Heatmaps comparing exposure, semantic cohesion, and reuse under three training curricula."
+    short: RepRSI
+    title: "RepRSI: Can Internal Learning Progress Guide Recursive Self-Improvement?"
+    authors: [Dongqi Zuo, Qian Feng, Guang Chen, Shangding Gu]
+    venue: Under review
+    summary: "RepRSI measures whether a model represents equivalent intermediate computations consistently across different contexts. It uses changes in that measure to select training examples and checkpoints for the next round of learning."
+    pdf: /assets/papers/reprsi.pdf
+  - id: repscribe
+    title: "RepScribe: Can Spatial Language Models Improve Themselves through Representation-Conditioned Supervision?"
+    authors: [Dongqi Zuo, Xinyu Wang, Jinjia Guo, Bowen Sun, Jing Du]
+    venue: Under review
+    record: https://openreview.net/forum?id=4sVWQg4y55
+    summary: "RepScribe uses failures on spatial tasks and errors in geometric predictions to generate training programs. A fixed executor checks the proposed spatial relations and turns valid programs into losses for the shared spatial encoder."
+  - id: provable-rag
+    image: /assets/img/provable-rag-teaser.png
+    image_alt: "Logical graph connecting retrieval and reasoning steps."
+    short: ProvableRAG
+    title: "Logically Provable Reasoning for Multi-Hop Retrieval Augmented Generation"
+    authors: [Chuan Zhou, Dongqi Zuo, Jialin Yu, Chunyuan Zheng, Haoxuan Li, Zhouchen Lin]
+    venue: Under review
+    summary: "ProvableRAG checks whether a proposed set of facts would suffice to answer a question before searching for them. It then retrieves the evidence and checks whether the facts it actually found support the answer."
+    pdf: /assets/papers/provable-rag.pdf
+    links:
+      - label: Code
+        url: https://github.com/DongqiZuo00/ProvableRAG
+  - id: physical-action-primitives
+    title: "Beyond Verbs and Trajectories: Physical Action Primitives through Local Interaction Laws"
+    authors: [Jinjia Guo, Xinyu Wang, Bowen Sun, Dongqi Zuo, Jing Du]
+    venue: Under review
+    record: https://openreview.net/forum?id=PgAeI7U0Ix
+  - id: roborsi
+    title: "RoboRSI: Evolving a guidance Strategy for Robotic Self-Improvement"
+    authors: [Xinyu Wang, Jinjia Guo, Bowen Sun, Dongqi Zuo, Jing Du]
+    venue: Under review
+    record: https://openreview.net/forum?id=2vX7UBSqne
+  - id: flight-dynamics
+    title: "When Memory Updates Help Prediction but Hurt Control: A Flight Dynamics Study"
+    authors: [Bowen Sun, Jinjia Guo, Xinyu Wang, Dongqi Zuo, Jing Du]
+    venue: Under review
+    record: https://openreview.net/forum?id=APRTbT0Hxh

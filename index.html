@@ -1,32 +1,43 @@
 ---
 layout: homepage
 ---
-<h2 id="about">About Me</h2>
-<p>I worked with <a href="https://haoxuanli-pku.github.io/">Haoxuan Li</a> at Peking University’s Institute for Artificial Intelligence. I also worked with Fei-Fei Li’s group at Stanford HAI and studied robotics at the University of California, Berkeley.</p>
+<div id="about">
+  <h2 id="research-interests">Research Interests</h2>
+  <p>My research spans interpretability, AI agents, and embodied intelligence. I study how models represent the steps in a chain of reasoning, how agents check the evidence they retrieve, and how robots apply a familiar skill to an unfamiliar object.</p>
+</div>
 
-<h2 id="research-interests">Research Interests</h2>
-<ul>
-  <li><strong>Interpretability.</strong> I study how models use visual evidence and how their hidden representations change as they reason.</li>
-  <li><strong>AI agents.</strong> I study how agents plan, decide which evidence to retrieve, and check whether it supports an answer.</li>
-  <li><strong>Embodied intelligence.</strong> I study how robots turn goals into actions and apply familiar skills to new objects.</li>
+<div id="background">
+  <h2 id="education">Education</h2>
+  <ul class="background-list">
+    <li><strong>Master of Engineering in Mechanical Engineering</strong> · July 2024 – June 2025<br>Robotics and Automatic Control · GPA 3.62/4.00</li>
+    <li><strong>Joint Bachelor’s Program in Mechanical Engineering</strong> · September 2019 – May 2024<br>Bachelor of Science and Bachelor of Engineering · GPA 3.73/4.00 for both degrees</li>
+  </ul>
+</div>
+
+<h2 id="experience">Research Experience</h2>
+<ul class="background-list">
+  <li><strong>Interpretability and reasoning.</strong> I developed Perception Chains to trace each step of a multimodal answer to the image region and attribute it uses. It reached 72.6% grounding accuracy on DIOR-RSVG, compared with 61.7% for Ferret. In CRF and GRT, I studied how models recover from reasoning errors and preserve multiple correct solutions.</li>
+  <li><strong>AI agents and self-improvement.</strong> I co-developed ProvableRAG to check which facts would answer a question and whether the retrieved evidence supports the answer. In RepRSI, I used a model’s internal representations to guide its next round of training. This reduced the error in predicting subsequent accuracy from 19.3 to 10.1 percentage points.</li>
+  <li><strong>Embodied intelligence and robot control.</strong> I tested how vision-language-action models transfer skills to new objects in LIBERO. In RepScribe, I used spatial reasoning errors to generate new training examples. In RADI, I used a language model to predict the effects of household actions and revise plans in VirtualHome. My flight-planning work used a recurrent network to predict energy consumption, reducing energy use by 34% relative to RAPPIDS.</li>
 </ul>
 
 <h2 id="publications">Selected Publications</h2>
 {% include papers.html papers=site.data.publications.published %}
 
-<h2 id="manuscripts">Research Manuscripts</h2>
+<h2 id="manuscripts">Under Review</h2>
 {% include papers.html papers=site.data.publications.manuscripts %}
 
-<div id="background">
-  <h2 id="experience">Research Experience</h2>
-  <ul class="background-list">
-    <li><strong>Peking University</strong><br>I worked on reasoning distillation and proof-guided retrieval in Haoxuan Li’s group at the Institute for Artificial Intelligence.</li>
-    <li><strong>Stanford University</strong> · September 2025 – August 2026<br>Research assistant in Fei-Fei Li’s group at the Stanford Institute for Human-Centered Artificial Intelligence.</li>
-    <li><strong>University of Illinois Urbana-Champaign</strong> · Summer 2023<br>Research intern in Naira Hovakimyan’s group. I worked on the hardware and navigation software for an autonomous mobile robot.</li>
-  </ul>
-  <h2 id="education">Education</h2>
-  <ul class="background-list">
-    <li><strong>University of California, Berkeley</strong> · 2024 – 2025<br>Master’s in mechanical engineering, specializing in robotics and control. I worked on multi-robot coordination and energy-aware flight planning.</li>
-    <li><strong>Chongqing University and University of Cincinnati</strong> · 2019 – 2024<br>Joint undergraduate program in mechanical engineering. B.Eng. from Chongqing University and B.S. from the University of Cincinnati.</li>
-  </ul>
-</div>
+<h2 id="awards">Selected Awards</h2>
+<ul class="background-list">
+  <li><strong>Best Paper Award in Multimedia Reasoning</strong> · 2026<br>For Perception Chains, presented orally at ACM Multimedia.</li>
+  <li><strong>Outstanding Graduate Award</strong> · June 2024<br>Top 2% for academic and overall performance.</li>
+  <li><strong>National Silver Prize</strong> · October 2021<br>China International Internet+ Innovation &amp; Entrepreneurship Competition. The engineering project ranked in the top 0.1% nationally.</li>
+  <li><strong>Silver Prize, Intelligent Manufacturing Challenge</strong> · June 2020<br>For an autonomous manufacturing system design.</li>
+  <li><strong>Academic Scholarship</strong> · 2020–2024<br>Awarded five times.</li>
+</ul>
+
+<h2 id="work-experience">Work Experience</h2>
+<ul class="background-list">
+  <li><strong>Research Assistant, Human-Centered AI</strong> · September 2025 – August 2026</li>
+  <li><strong>Visiting Student and Research Assistant</strong> · Began October 2024<br>I studied how to preserve multiple correct solutions during language-model post-training and developed proof checks for multi-hop retrieval.</li>
+</ul>

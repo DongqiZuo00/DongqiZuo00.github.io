@@ -18,12 +18,12 @@
           <div class="periodical"><em>{{ paper.venue | escape }}</em></div>
           {% if paper.note %}<div class="note">{{ paper.note | escape }}</div>{% endif %}
           <div class="links">
-            {% if paper.pdf %}<a class="btn" href="{{ paper.pdf | relative_url }}" download aria-label="Download {{ paper.short | escape }} PDF">PDF</a>{% endif %}
+            {% if paper.pdf %}<a class="btn" href="{{ paper.pdf | relative_url }}" download aria-label="Download {{ paper.short | escape }} PDF">{{ paper.pdf_label | default: 'PDF' | escape }}</a>{% endif %}
             {% if paper.record %}<a class="btn" href="{{ paper.record | escape }}">Paper record</a>{% endif %}
             {% for link in paper.links %}<a class="btn" href="{{ link.url | escape }}">{{ link.label | escape }}</a>{% endfor %}
             {% if paper.award %}<a class="award-note" href="{{ paper.award_url | escape }}"><em>{{ paper.award | escape }}</em></a>{% endif %}
           </div>
-          <details class="paper-summary"><summary>Summary</summary><p>{{ paper.summary | escape }}</p></details>
+          {% if paper.summary %}<details class="paper-summary"><summary>Summary</summary><p>{{ paper.summary | escape }}</p></details>{% endif %}
         </div>
       </div>
     </li>
