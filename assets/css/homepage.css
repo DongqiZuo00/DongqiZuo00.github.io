@@ -5,15 +5,6 @@ a:focus-visible, summary:focus-visible { outline: 2px solid currentColor; outlin
 
 .publications { margin-top: 1rem; }
 .publications ol.bibliography li { min-height: 0; margin-bottom: 1.5rem; }
-.pub-row { gap: 1.15rem; }
-.pub-row .abbr { flex: 0 0 25%; position: relative; min-width: 0; }
-.pub-row .col-sm-9 { flex: 1; min-width: 0; }
-.publications ol.bibliography li .abbr { height: auto; margin: 0; }
-.publications ol.bibliography li .teaser {
-  display: block; width: 100%; height: auto; aspect-ratio: 1.55; margin: 0;
-  object-fit: contain; background: white;
-}
-.publications ol.bibliography li .abbr abbr { top: .25rem; left: .25rem; padding-inline: .5rem; text-decoration: none; }
 .links { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem; margin-top: .3rem; }
 .links .btn, .paper-summary summary { font-size: .85rem; }
 .links .award-note { color: #a43b26; font-weight: 600; }
@@ -23,7 +14,3 @@ a:focus-visible, summary:focus-visible { outline: 2px solid currentColor; outlin
 .paper-summary p { margin: .25rem 0 0; }
 .background-list li { margin-bottom: .65rem; }
 @media (prefers-color-scheme: dark) { .links .award-note { color: #ffad97; } }
-@media (max-width: 480px) {
-  .pub-row .abbr { max-width: 12rem; }
-  .publications ol.bibliography li .abbr { margin-bottom: .65rem; }
-}
