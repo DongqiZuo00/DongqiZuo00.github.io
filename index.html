@@ -7,10 +7,11 @@ layout: homepage
 </div>
 
 <h2 id="research-interests">Research Interests</h2>
+<p>My research goal is to build <strong>trustworthy AI</strong>. I study how training shapes the reliability of a model’s reasoning, how an agent’s conclusions can be checked against evidence, and when a robot can apply a learned skill beyond its training examples.</p>
 <ul class="background-list">
-  <li><strong>Natural Language Processing.</strong> I study how language models learn to reason during post-training. My work examines how reasoning transfers to smaller models, how training affects the diversity of correct solutions, and whether changes in a model’s internal representations can guide curriculum learning. For language agents, I use symbolic proof checking to plan multi-hop retrieval and verify whether the retrieved evidence supports an answer.</li>
-  <li><strong>Multimodal Learning.</strong> My interests are visual grounding, spatial reasoning, and the interpretability of vision-language models. I study how to link individual reasoning steps to image regions and their attributes, and how to use errors in predicted spatial relations to supervise representation learning.</li>
-  <li><strong>Robot Learning.</strong> I study generalization in robot manipulation and task planning for embodied agents. I examine whether a vision-language-action policy can perform familiar skills on familiar objects in combinations absent from its fine-tuning data. My work on planning uses world models to predict action effects and revise plans for household tasks.</li>
+  <li><strong>Reliable reasoning in language models.</strong> In <a href="#contractive-restoring-flows">CRF</a>, I study how to help a smaller model recover when its reasoning drifts from its teacher’s. In <a href="#grt">GRT</a>, I examine why verifier-based post-training can narrow the range of correct solutions a model produces and how to preserve that diversity.</li>
+  <li><strong>Interpretability and verification.</strong> <a href="#perception-chains">Perception Chains</a> links each visual reasoning step to an image region and an observed attribute, so a mistaken inference can be traced to its evidence. In <a href="#provable-rag">ProvableRAG</a>, we use symbolic proof checking to determine which facts would suffice to answer a question and whether the retrieved premises support the conclusion.</li>
+  <li><strong>Generalization and planning in embodied AI.</strong> My <a href="#vla">robot learning research</a> tests whether a policy can apply a familiar skill to a familiar object when that pairing was absent from fine-tuning. In <a href="#radi">RADI</a>, I study how an embodied agent can use predicted action effects to identify an infeasible step and revise its plan in simulation.</li>
 </ul>
 
 <h2 id="publications">Selected Publications</h2>
