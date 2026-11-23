@@ -7,11 +7,10 @@ layout: homepage
 </div>
 
 <h2 id="research-interests">Research Interests</h2>
-<p>My research goal is to build <strong>trustworthy AI</strong>. I study how training shapes the reliability of a model’s reasoning, how an agent’s conclusions can be checked against evidence, and when a robot can apply a learned skill beyond its training examples.</p>
+<p>My two main research interests are trustworthy AI and robotics. At their intersection, I study how a robot can use evidence about an unfamiliar situation to decide whether to carry out its plan or revise it.</p>
 <ul class="background-list">
-  <li><strong>Reliable reasoning in language models.</strong> In <a href="#contractive-restoring-flows">CRF</a>, I study how to help a smaller model recover when its reasoning drifts from its teacher’s. In <a href="#grt">GRT</a>, I examine why verifier-based post-training can narrow the range of correct solutions a model produces and how to preserve that diversity.</li>
-  <li><strong>Interpretability and verification.</strong> <a href="#perception-chains">Perception Chains</a> links each visual reasoning step to an image region and an observed attribute, so a mistaken inference can be traced to its evidence. In <a href="#provable-rag">ProvableRAG</a>, we use symbolic proof checking to determine which facts would suffice to answer a question and whether the retrieved premises support the conclusion.</li>
-  <li><strong>Generalization and planning in embodied AI.</strong> My <a href="#vla">robot learning research</a> tests whether a policy can apply a familiar skill to a familiar object when that pairing was absent from fine-tuning. In <a href="#radi">RADI</a>, I study how an embodied agent can use predicted action effects to identify an infeasible step and revise its plan in simulation.</li>
+  <li><strong>Trustworthy AI.</strong> I study the reliability and interpretability of reasoning in language and vision-language models. My work on post-training examines how to <a href="#contractive-restoring-flows">stabilize reasoning during distillation</a> and <a href="#grt">preserve multiple correct solutions</a>. I also study how to <a href="#perception-chains">trace a visual inference to an image region</a> and <a href="#provable-rag">verify whether retrieved evidence supports a language agent’s answer</a>.</li>
+  <li><strong>Robotics.</strong> I work on motion planning, robot learning, and manipulation. At Berkeley, I modeled how much energy a drone would use along a flight path and built a platform to test those predictions. My <a href="#vla">manipulation research</a> examines whether a policy can apply familiar skills to familiar objects in combinations absent from its fine-tuning data. In <a href="#radi">RADI</a>, I use a world model to predict action effects and revise household task plans in simulation.</li>
 </ul>
 
 <h2 id="publications">Selected Publications</h2>
